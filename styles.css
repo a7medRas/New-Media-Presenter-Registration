@@ -1,0 +1,136 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    color: #2c3e50;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+select, input[type="tel"], input[type="text"] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+select option, input[type="tel"]::placeholder, input[type="text"]::placeholder {
+    font-size: 1rem;
+    color: #555;
+}
+
+select {
+    font-family: 'Cairo', sans-serif;
+}
+
+button {
+    font-size: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    label, input, select, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input, select, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

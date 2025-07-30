@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل مذيعين جدد</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- إضافة البنر في بداية الاستبيان -->
+        <div class="banner">
+            <img src="ChatGPT%20Image%2030%20يوليو%202025،%2008_06_32%20م.png" alt="بنر تسجيل مذيعين جدد" class="banner-image">
+        </div>
+
+        <h1>تسجيل مذيعين جدد</h1>
+        <p>يرجى ملء البيانات المطلوبة للتسجيل كـ مذيع جديد.</p>
+        <form id="register-form">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="country">الدولة:</label>
+            <select id="country" name="country" required>
+                <option value="مصر">مصر</option>
+                <option value="السعودية">السعودية</option>
+                <option value="الإمارات">الإمارات</option>
+                <option value="الأردن">الأردن</option>
+                <option value="الكويت">الكويت</option>
+                <option value="عمان">عمان</option>
+                <option value="قطر">قطر</option>
+                <option value="البحرين">البحرين</option>
+                <option value="اليمن">اليمن</option>
+                <option value="المغرب">المغرب</option>
+                <option value="الجزائر">الجزائر</option>
+                <option value="تونس">تونس</option>
+                <option value="لبنان">لبنان</option>
+                <option value="سوريا">سوريا</option>
+                <option value="فلسطين">فلسطين</option>
+                <option value="العراق">العراق</option>
+                <option value="تركيا">تركيا</option>
+                <option value="السودان">السودان</option>
+            </select>
+
+            <label for="gender">النوع:</label>
+            <select id="gender" name="gender" required>
+                <option value="ذكر">ذكر</option>
+                <option value="أنثى">أنثى</option>
+            </select>
+
+            <label for="nationality">الجنسيه:</label>
+            <select id="nationality" name="nationality" required>
+                <option value="مصر">مصر</option>
+                <option value="السعودية">السعودية</option>
+                <option value="الإمارات">الإمارات</option>
+                <option value="الأردن">الأردن</option>
+                <option value="الكويت">الكويت</option>
+                <option value="عمان">عمان</option>
+                <option value="قطر">قطر</option>
+                <option value="البحرين">البحرين</option>
+                <option value="اليمن">اليمن</option>
+                <option value="المغرب">المغرب</option>
+                <option value="الجزائر">الجزائر</option>
+                <option value="تونس">تونس</option>
+                <option value="لبنان">لبنان</option>
+                <option value="سوريا">سوريا</option>
+                <option value="فلسطين">فلسطين</option>
+                <option value="العراق">العراق</option>
+                <option value="تركيا">تركيا</option>
+                <option value="السودان">السودان</option>
+            </select>
+
+            <label for="whatsapp">رقم الواتساب:</label>
+            <select id="whatsapp-country-code" name="whatsapp-country-code" required>
+                <option value="+20">مصر (+20)</option>
+                <option value="+966">السعودية (+966)</option>
+                <option value="+971">الإمارات (+971)</option>
+                <option value="+962">الأردن (+962)</option>
+                <option value="+965">الكويت (+965)</option>
+                <option value="+968">عمان (+968)</option>
+                <option value="+974">قطر (+974)</option>
+                <option value="+973">البحرين (+973)</option>
+                <option value="+967">اليمن (+967)</option>
+                <option value="+212">المغرب (+212)</option>
+                <option value="+213">الجزائر (+213)</option>
+                <option value="+216">تونس (+216)</option>
+                <option value="+961">لبنان (+961)</option>
+                <option value="+963">سوريا (+963)</option>
+                <option value="+970">فلسطين (+970)</option>
+                <option value="+964">العراق (+964)</option>
+                <option value="+90">تركيا (+90)</option>
+            </select>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="أدخل رقم الواتساب" required>
+
+            <label for="invite-code">كود الدعوة:</label>
+            <input type="text" id="invite-code" name="invite-code" required>
+
+            <label for="has-live-platform">هل كنت تعمل على أي منصة بث صوتي أو لايف؟</label>
+            <select id="has-live-platform" name="has-live-platform" required>
+                <option value="نعم">نعم</option>
+                <option value="لا">لا</option>
+            </select>
+
+            <label for="app-name">اسم التطبيق (إن وجد):</label>
+            <input type="text" id="app-name" name="app-name">
+
+            <label for="talent">هل لديك موهبة؟</label>
+            <select id="talent" name="talent" required>
+                <option value="غناء">غناء</option>
+                <option value="شعر">شعر</option>
+                <option value="عزف">عزف</option>
+                <option value="رسم">رسم</option>
+                <option value="طبخ">طبخ</option>
+                <option value="أعمال يدويه">أعمال يدويه</option>
+                <option value="تمثيل">تمثيل</option>
+                <option value="تقليد أصوات">تقليد أصوات</option>
+            </select>
+
+            <button type="submit">تسجيل</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
